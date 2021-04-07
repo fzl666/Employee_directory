@@ -3,24 +3,27 @@ import Row from "./row"
 import list from "./list.json"
 import Container from "./container"
 import Title from "./Title"
+import Search from "./search"
+import Top from "./top"
 
 class Table extends Component {
 state={
-    list
+    users:list,
 };
-
 
 render(){
     return(
-    
     <Container>
         <Title>Employee Directory</Title>
-        {this.state.list.map(user=>(
+        <Search
+       value={this.value}
+       onChange={this.onChangeHandler} ></Search>
+        <Top/>
+        {this.state.users.map(user=>(
         <Row 
-        id={user.id}
         name={user.name}
         email={user.email}
-        number={user.number}
+        number={user.phone}
         picture={user.picture}
         />
     ))}
