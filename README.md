@@ -2,7 +2,9 @@
 
 ## Description 
 
-View profiles of employees, Sort profiles by names, quick lookup indvisual employees.
+- View profiles of employees.
+- Sort profiles by names
+- quick lookup indvisual employees.
 
 ## Screen　Shot
 
