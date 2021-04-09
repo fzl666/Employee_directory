@@ -1,5 +1,7 @@
 # Employee Directory
 
+[Deployed link](https://fzl666.github.io/Employee_directory/)
+
 ## Description 
 
 - View profiles of employees.
