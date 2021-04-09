@@ -5,9 +5,8 @@ row:{
   background: "#e8eaf6",
 }
 };
-function row(props) {
+function Row(props) {
     return (
-        <div class="container">
         <div style={style.row} class="row">
           <div class="col">
             <p>{props.name}</p>
@@ -22,7 +21,7 @@ function row(props) {
           <img src={props.picture} alt={props.name}></img>   
           </div>
         </div>
-      </div>
     );
   }
-export default row;
+export default Row;
+

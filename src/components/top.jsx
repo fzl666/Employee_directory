@@ -1,4 +1,8 @@
 import React from "react";
+import { render } from "react-dom"
+import { faSort } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 const style = {
 row:{
   margin: 10,
@@ -12,8 +16,9 @@ function Top(props) {
     return (
         <div class="container">
         <div style={style.row} class="row">
-          <div class="col">
-            <p>Name</p>
+          <div class="col" onClick={props.onClick}>
+            <p>Name <FontAwesomeIcon icon={faSort} /></p>
+           
           </div>
           <div class="col">  
           <p>E-mail</p>      
@@ -28,4 +33,5 @@ function Top(props) {
       </div>
     );
   }
+  render(<Top />, document.getElementById("root"))
 export default Top;

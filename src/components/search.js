@@ -1,16 +1,11 @@
 import React from "react";
-const style={
-    search:{
-margin:10
-    }
-}
+
 function Search(props) {
     return(
-    <form class="container" style={style.search}>
     <div class="row">
       <div class='col'> <input
         onChange={props.onChangeHandler}
-        value={props.value}
+        value={props.search}
         name="search"
         type="text"
         className="form-control"
@@ -19,7 +14,6 @@ function Search(props) {
       />
       </div>
     </div>
-  </form>
     )
 }
 
